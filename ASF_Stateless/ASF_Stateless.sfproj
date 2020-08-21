@@ -32,10 +32,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Web1\Web1.csproj">
+    <ProjectReference Include="SatefulSrvc\SatefulSrvc.csproj" />
+    <ProjectReference Include="StatelessSrvc\StatelessSrvc.csproj">
       <ServiceLaunchUrl>http://{MachineName}:{ServicePort}/</ServiceLaunchUrl>
     </ProjectReference>
-    <ProjectReference Include="StateFulWeb2\StateFulWeb2.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
